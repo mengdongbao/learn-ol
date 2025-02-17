@@ -34,6 +34,11 @@ const router = createRouter({
       name: 'rasterCOG',
       component: () => import('@/views/raster/RasterCOG.vue')
     },
+    {
+      path: '/tileGrid',
+      name: 'tileGrid',
+      component: () => import('@/views/raster/TileGrid.vue')
+    },
   ],
 })
 

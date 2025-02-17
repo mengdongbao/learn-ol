@@ -12,6 +12,9 @@
     <div>
       <router-link :to="{name: 'rasterCOG'}">栅格地图(COG)</router-link>
     </div>
+    <div>
+      <router-link :to="{name: 'tileGrid'}">栅格地图(TileGrid)</router-link>
+    </div>
   </div>
 </template>
 
