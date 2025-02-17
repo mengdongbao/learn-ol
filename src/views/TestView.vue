@@ -5,8 +5,7 @@ const { count } = useRefsCounterStore()
 
 <template>
   <div class="page-test-view">
-    <h1>Hello World, count is {{ count }}</h1>
-    <button @click="count += 1">count + 1</button>
+    <router-link :to="{name: 'baseMap'}">baseMap</router-link>
   </div>
 </template>
 

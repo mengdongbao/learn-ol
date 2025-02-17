@@ -19,6 +19,11 @@ const router = createRouter({
       name: 'login',
       component: TestLogin,
     },
+    {
+      path: '/base',
+      name: 'baseMap',
+      component: () => import('@/views/base/BaseMap.vue')
+    }
   ],
 })
 
@@ -28,7 +33,7 @@ mitt.on('http:401', () => {
 
 router.beforeEach((to, from, next) => {
   let pass = true
-  if (!inWhiteList(to)) {
+  if (!inWhiteList(to, true)) {
     next({ name: 'login' })
   }
   pass && next()
