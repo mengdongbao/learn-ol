@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import TestView from '@/views/TestView.vue'
+import HomeView from '@/views/HomeView.vue'
 import { inWhiteList } from './authentication'
 import { useMitt } from '@/bus'
 import TestLogin from '@/views/TestLogin.vue'
@@ -12,7 +12,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: TestView,
+      component: HomeView,
     },
     {
       path: '/login',
@@ -23,7 +23,12 @@ const router = createRouter({
       path: '/base',
       name: 'baseMap',
       component: () => import('@/views/base/BaseMap.vue')
-    }
+    },
+    {
+      path: '/vector',
+      name: 'vectorMap',
+      component: () => import('@/views/vector/VectorDemo.vue')
+    },
   ],
 })
 

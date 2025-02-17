@@ -1,11 +1,14 @@
 <script setup lang="ts">
-import { useRefsCounterStore } from '@/stores/counter'
-const { count } = useRefsCounterStore()
 </script>
 
 <template>
   <div class="page-test-view">
-    <router-link :to="{name: 'baseMap'}">baseMap</router-link>
+    <div>
+      <router-link :to="{name: 'baseMap'}">基本地图</router-link>
+    </div>
+    <div>
+      <router-link :to="{name: 'vectorMap'}">矢量地图</router-link>
+    </div>
   </div>
 </template>
 
