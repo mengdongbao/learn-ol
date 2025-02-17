@@ -29,6 +29,11 @@ const router = createRouter({
       name: 'vectorMap',
       component: () => import('@/views/vector/VectorDemo.vue')
     },
+    {
+      path: '/rasterCOG',
+      name: 'rasterCOG',
+      component: () => import('@/views/raster/RasterCOG.vue')
+    },
   ],
 })
 

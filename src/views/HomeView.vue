@@ -9,6 +9,9 @@
     <div>
       <router-link :to="{name: 'vectorMap'}">矢量地图</router-link>
     </div>
+    <div>
+      <router-link :to="{name: 'rasterCOG'}">栅格地图(COG)</router-link>
+    </div>
   </div>
 </template>
 
