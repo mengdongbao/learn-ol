@@ -9,6 +9,9 @@
             <div>
                 <router-link :to="{ name: 'vectorDemo' }">基本地图</router-link>
             </div>
+            <div>
+                <router-link :to="{ name: 'vectorEvent' }">地图事件</router-link>
+            </div>
         </div>
     </div>
 </template>

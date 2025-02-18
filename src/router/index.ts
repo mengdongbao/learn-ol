@@ -33,7 +33,12 @@ const router = createRouter({
             path: 'base',
             name: 'vectorDemo',
             component: () => import('@/views/vector/VectorDemo.vue')
-        }
+        },
+        {
+            path: 'event',
+            name: 'vectorEvent',
+            component: () => import('@/views/vector/VectorEvent.vue')
+        },
       ]
     },
     {
