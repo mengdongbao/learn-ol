@@ -22,22 +22,36 @@ const router = createRouter({
     {
       path: '/base',
       name: 'baseMap',
-      component: () => import('@/views/base/BaseMap.vue')
+      component: () => import('@/views/base/BaseMap.vue'),
     },
     {
       path: '/vector',
-      name: 'vectorMap',
-      component: () => import('@/views/vector/VectorDemo.vue')
+      name: 'vectorIndex',
+      component: () => import('@/views/vector/VectorIndex.vue'),
+      children: [
+        {
+            path: 'base',
+            name: 'vectorDemo',
+            component: () => import('@/views/vector/VectorDemo.vue')
+        }
+      ]
     },
     {
-      path: '/rasterCOG',
-      name: 'rasterCOG',
-      component: () => import('@/views/raster/RasterCOG.vue')
-    },
-    {
-      path: '/tileGrid',
-      name: 'tileGrid',
-      component: () => import('@/views/raster/TileGrid.vue')
+      path: '/raster',
+      name: 'rasterIndex',
+      component: () => import('@/views/raster/RasterIndex.vue'),
+      children: [
+        {
+          path: 'rasterCOG',
+          name: 'rasterCOG',
+          component: () => import('@/views/raster/RasterCOG.vue'),
+        },
+        {
+          path: 'tileGrid',
+          name: 'tileGrid',
+          component: () => import('@/views/raster/TileGrid.vue'),
+        },
+      ],
     },
   ],
 })
