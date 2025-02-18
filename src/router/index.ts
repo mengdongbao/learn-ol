@@ -39,6 +39,11 @@ const router = createRouter({
             name: 'vectorEvent',
             component: () => import('@/views/vector/VectorEvent.vue')
         },
+        {
+            path: 'static-style',
+            name: 'vectorStaticStyle',
+            component: () => import('@/views/vector/VectorStaticStyle.vue')
+        },
       ]
     },
     {
