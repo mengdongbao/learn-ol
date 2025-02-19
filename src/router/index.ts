@@ -44,6 +44,11 @@ const router = createRouter({
             name: 'vectorStaticStyle',
             component: () => import('@/views/vector/VectorStaticStyle.vue')
         },
+        {
+            path: 'dynamic-style',
+            name: 'vectorDynamicStyle',
+            component: () => import('@/views/vector/VectorDynamicStyle.vue')
+        },
       ]
     },
     {

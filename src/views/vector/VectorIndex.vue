@@ -15,6 +15,9 @@
             <div>
                 <router-link :to="{ name: 'vectorStaticStyle' }">矢量静态样式</router-link>
             </div>
+            <div>
+                <router-link :to="{ name: 'vectorDynamicStyle' }">矢量动态样式</router-link>
+            </div>
         </div>
     </div>
 </template>
